@@ -48,6 +48,12 @@ addBtn.on('click', function() {
   } 
   $('.input-text').val("");
 });
+ulParentElement.on('click', 'a', function() {
+  const textLink = $(this).text();  
+  const modalBody = $('.modal-body');
+  modalBody.text(textLink );
+});
+    
   
 
     
